@@ -13,10 +13,10 @@
         android:theme="@style/Theme.AspectProj"
         tools:replace="android:appComponentFactory">
         <activity
-            android:name=".PermissionAct"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".PermissionAct"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
