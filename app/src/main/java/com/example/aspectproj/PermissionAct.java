@@ -15,13 +15,16 @@ import android.os.Bundle;
 import android.provider.Settings;
 import android.widget.Toast;
 
+/*
+* 普通的注释 + Aspect 对单一情况的权限申请
+* */
 public class PermissionAct extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_permission);
-        initPermissions();
+        //initPermissions();
     }
 
         //调用此方法判断是否拥有权限

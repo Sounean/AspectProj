@@ -1,4 +1,4 @@
-package com.example.aspectproj;
+package com.example.aspectproj.annotation;
 
 
 import android.util.Log;
@@ -17,6 +17,6 @@ public class PermissionAspect {
 
     @After("getPermissionWork()")
     public void invokGetPermission(){
-        Log.e("AspectJ--->", "执行了获取权限的操作 " );
+        Log.e("AspectJ--->", "申请权限 " );
     }
 }

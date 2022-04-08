@@ -20,7 +20,7 @@ public class TimeAspect {
     // 此处用了execution：用execution(方法返回值 包名类名一直到方法名(传参))    *表示任意对象 ..表示不管多少传参，都可以用这个表示
     // 声明了getTimeWork()表示切入之后的操作
     //@Pointcut("execution(* com.example.aspectproj.MainActivity.getTime(..))") // 具体的某个包某个类的某个方法
-    @Pointcut("execution(@ExecuteTime * * (..))")   // 通过注解的方式，获取切入点(@注解 任何返回类型 任何方法 （任何参数）)
+    @Pointcut("execution(@ExecuteTime * *(..))")   // 通过注解的方式，获取切入点(@注解 任何返回类型 任何方法 （任何参数）)
     public void getTimeWork(){}
 
     // 2 新建通知：（3种类型 before、after、around）

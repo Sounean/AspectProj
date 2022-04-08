@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.aspectproj">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:appComponentFactory="1"
@@ -12,18 +15,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AspectProj"
         tools:replace="android:appComponentFactory">
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".PermissionAct"
-            android:exported="true">
+        <activity android:name=".PermissionAct"/>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".PermissionActTwo"
+            tools:ignore="IntentFilterExportedReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.ApplyPermissionAct" android:theme="@style/my_Transparent"></activity>
     </application>
 
 </manifest>
