@@ -40,4 +40,6 @@ public class TimeAspect {
         long endTime = System.currentTimeMillis();
         Log.e("AspectJ--->", "正常方式执行时间: "+(endTime-startTime) );
     }
+
+
 }

@@ -3,7 +3,8 @@ package com.example.aspectproj;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.util.Log;
+
+import com.example.aspectproj.annotation.ExecuteTime;
 
 public class MainActivity extends AppCompatActivity {
 
